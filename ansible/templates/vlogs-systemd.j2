@@ -1,0 +1,11 @@
+[Unit]
+Description=victorialogs service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/victoria-logs-prod -storageDataPath /mnt/logs/
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+victorialogs_datasource_version: 0.2.6
+victoriametrics_datasource_ver: 0.1.3
+promtail_version: 3.0.0
+loki_version: "3.0.0"
+loki_bin_path: "/usr/local/bin/loki"
+loki_service_path: "/etc/systemd/system/loki.service"
+loki_config_url: "https://raw.githubusercontent.com/grafana/loki/main/cmd/loki/loki-local-config.yaml"
+loki_download_url: "https://github.com/grafana/loki/releases/download/v{{ loki_version }}/loki-linux-amd64.zip"
+vmetrics_version: 1.82.1
+victorialogs_group: victoriametrics
+victorialogs_user: victoriametrics
+victorialogs_version: 0.25.0
+victorialogs_install_dir: /usr/local/bin/
+victorialogs_service_file: /etc/systemd/system/victorialogs.service
+victorialogs_storage_path: /mnt/logs

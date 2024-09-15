@@ -2,8 +2,6 @@
 - name: Install promtail
   hosts: vlogs-host
   become: yes
-  vars:
-    promtail_version: 3.0.0
 
   tasks:
 

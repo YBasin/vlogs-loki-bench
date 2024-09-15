@@ -2,8 +2,8 @@
 - name: Install promtail
   hosts: loki-host
   become: yes
-  vars:
-    promtail_version: 3.0.0
+
+
 
   tasks:
 

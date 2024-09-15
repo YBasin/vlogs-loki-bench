@@ -2,8 +2,7 @@
 - name: install VictoriaMetrics
   hosts: grafana-bench
   become: yes
-  vars:
-    vmetrics_version: 1.82.1
+
 
   tasks:
 

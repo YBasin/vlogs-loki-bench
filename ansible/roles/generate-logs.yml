@@ -5,7 +5,7 @@
   tasks:
     - name: Copy script to bench machines
       copy:
-        src: ./log-download.sh
+        src: files/log-download.sh
         dest: /tmp/log-download.sh
         mode: '0755'
 

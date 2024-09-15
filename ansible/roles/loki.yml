@@ -2,12 +2,8 @@
 - name: Deploy Loki v3
   hosts: loki-host
   become: yes
-  vars:
-    loki_version: "3.0.0"
-    loki_bin_path: "/usr/local/bin/loki"
-    loki_service_path: "/etc/systemd/system/loki.service"
-    loki_config_url: "https://raw.githubusercontent.com/grafana/loki/main/cmd/loki/loki-local-config.yaml"
-    loki_download_url: "https://github.com/grafana/loki/releases/download/v{{ loki_version }}/loki-linux-amd64.zip"
+
+
 
   tasks:
     - name: Ensure dependencies are installed

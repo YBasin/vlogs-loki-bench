@@ -2,13 +2,8 @@
 - name: Setup Victorialogs service
   hosts: vlogs-host
   become: true
-  vars:
-    victorialogs_group: victoriametrics
-    victorialogs_user: victoriametrics
-    victorialogs_version: 0.25.0
-    victorialogs_install_dir: /usr/local/bin/
-    victorialogs_service_file: /etc/systemd/system/victorialogs.service
-    victorialogs_storage_path: /mnt/logs
+
+
 
   tasks:
     - name: Create victorialogs group
